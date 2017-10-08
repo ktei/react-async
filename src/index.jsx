@@ -1,4 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<h1>Hello</h1>, document.getElementById('root'));
+import ParisWeather from './ParisWeather';
+
+ReactDOM.render(<ParisWeather />, document.getElementById('root'));

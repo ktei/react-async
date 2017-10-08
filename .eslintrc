@@ -4,9 +4,12 @@
     "react/prop-types": 0,
     "linebreak-style": "off",
     "max-len": "off",
-    "react/jsx-no-bind": 0
+    "react/jsx-no-bind": 0,
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/alt-text": "off"
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "jquery": true
   }
 }
