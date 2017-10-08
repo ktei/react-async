@@ -7,8 +7,6 @@ export default class ParisComponent extends React.Component {
       isLoading: false,
       data: null,
     };
-
-    this.fetchData = this.fetchData.bind(this);
   }
 
   componentDidMount() {
@@ -45,7 +43,7 @@ export default class ParisComponent extends React.Component {
         <button
           className="btn btn-primary"
           disabled={this.state.isLoading}
-          onClick={this.fetchData}
+          onClick={this.fetchData.bind(this)}
         >
           Refresh
         </button>
