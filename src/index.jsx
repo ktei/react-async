@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import ParisWeather from './ParisWeather';
+// import ParisWeather from './ParisWeather';
+import CdnjsSearch from './CdnjsSearch';
 
-ReactDOM.render(<ParisWeather />, document.getElementById('root'));
+ReactDOM.render(<CdnjsSearch />, document.getElementById('root'));
