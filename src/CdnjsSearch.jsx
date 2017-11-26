@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React from 'react';
 
 export default class CdnjsSearch extends React.Component {
@@ -18,10 +17,9 @@ export default class CdnjsSearch extends React.Component {
   loadData() {
     this.setState({ isLoading: true });
     const apiUrl = this.constructApiUrl();
-    axios.get(apiUrl)
-      .then((response) => {
-        this.setState({ isLoading: false, result: response.data });
-      });
+    $.getJSON(apiUrl, (data) => {
+      this.setState({ isLoading: false, result: data });
+    });
   }
 
   constructApiUrl() {
